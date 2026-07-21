@@ -49,7 +49,7 @@
         const genderClean = gender.value.trim();
 
         // Strict validation rule enforcement
-        if (fNameClean === "" || lNameClean === "" || mNameClean === "" || eNameClean === "" || ageClean === "" || dobClean === "" || genderClean === "") {
+        if (fNameClean === "" || lNameClean === "" || ageClean === "" || dobClean === "" || genderClean === "") {
             validationAlert.classList.remove('d-none');
             validationAlert.textContent = "Validation Failure: First Name, Last Name, Middle Name, Age, Date of birth, and Gender cannot be blank strings!";
             return;
